@@ -1,10 +1,14 @@
+
 #scikit-learn
+# Se instala para entrenar modelos propios (como MultinomialNB) usando tus propios datos.
 import os
 os.environ["GROQ_API_KEY"]=""
 from groq import Groq
-import pickle
-from sklearn.feature_extraction.text import CountVectorizer
-from sklearn.naive_bayes import MultinomialNB
+
+
+#import pickle
+#from sklearn.feature_extraction.text import CountVectorizer
+#from sklearn.naive_bayes import MultinomialNB
 
 MODEL_DIR= "models"
 MODEL_PATH =os.path.join(MODEL_DIR,"model.pkl")
